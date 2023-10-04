@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
 import { useState, useEffect } from "react";
+import { API_KEY, API_HOST } from "@env";
+import DataMoon from "../Components/DataMoon";
 
 export default function HomeScreen() {
   const [info, setInfo] = useState(Object);
@@ -12,8 +14,8 @@ export default function HomeScreen() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "c78c77fa70msh73782e4c6678fafp1f488fjsnd1c0d9eb37af",
-      "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+      "X-RapidAPI-Key": API_KEY,
+      "X-RapidAPI-Host": API_HOST,
     },
   };
 
@@ -28,13 +30,7 @@ export default function HomeScreen() {
     try {
       const res = await fetch(urlAstro, options);
       const object = await res.json();
-      setInfo(object);
-    } catch (error) {}
-  }
-
-  function ShowData() {
-    try {
-      return <Text>MOON: {info.astronomy.astro.moon_phase}</Text>;
+      setInfo(object.astronomy.astro);
     } catch (error) {}
   }
 
@@ -44,10 +40,7 @@ export default function HomeScreen() {
     >
       <Text>HomeScreen</Text>
       <Text>Today</Text>
-      <TouchableOpacity onPress={getCurrentWeather}>
-        <Text>Get info</Text>
-      </TouchableOpacity>
-      {ShowData()}
+      <DataMoon moon_info={info} />
     </View>
   );
 }
