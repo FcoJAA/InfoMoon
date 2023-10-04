@@ -1,8 +1,9 @@
 import React from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View } from "react-native";
 import { useState, useEffect } from "react";
 import { API_KEY, API_HOST } from "@env";
 import DataMoon from "../Components/DataMoon";
+import { sty } from "../Css/StylesHomeScreen";
 
 export default function HomeScreen() {
   const [info, setInfo] = useState(Object);
@@ -35,11 +36,7 @@ export default function HomeScreen() {
   }
 
   return (
-    <View
-      style={{ marginTop: "10%", marginBottom: "5%", alignItems: "center" }}
-    >
-      <Text>HomeScreen</Text>
-      <Text>Today</Text>
+    <View style={[sty.mainContainer]}>
       <DataMoon moon_info={info} />
     </View>
   );

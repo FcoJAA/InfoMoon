@@ -6,26 +6,26 @@ const sty = StyleSheet.create({
     borderColor: "grey",
     borderWidth: 1,
     borderRadius: 10,
-    width: "92%",
-    height: "95%",
+    width: "101%",
+    height: "100%",
   },
   image: {
     backgroundColor: "#B6D4DC",
-    width: "70%",
-    height: "70%",
+    width: "60%",
+    height: "75%",
   },
   miniContainer1: {
     backgroundColor: "#448A9D",
     justifyContent: "center",
     alignItems: "center",
+    height: 200,
   },
   miniContainer2: {
-    marginTop: 10,
     backgroundColor: "#5E449D",
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height: "40%",
+    height: 300,
   },
 });
 
