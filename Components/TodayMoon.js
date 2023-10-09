@@ -69,6 +69,10 @@ export default function DataMoon(props) {
           <Text style={[sty.whiteText]}>
             Illumiantion: {info.moon_illumination}
           </Text>
+          <Text style={[sty.whiteText]}>Moonrise: {info.moonrise}</Text>
+          <Text style={[sty.whiteText]}>Moonset: {info.moonset}</Text>
+          <Text style={[sty.whiteText]}>Sunrise: {info.sunrise}</Text>
+          <Text style={[sty.whiteText]}>Sunset: {info.sunset}</Text>
         </View>
         <View style={[sty.containerImage]}>{getIcon()}</View>
         <Footer />
