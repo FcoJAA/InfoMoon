@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Image, ScrollView } from "react-native";
-import { sty } from "../Css/StylesDataMoon";
+import { sty } from "../Css/StylesTodayMoon";
 import Footer from "./Footer";
 
 export default function DataMoon(props) {
@@ -57,10 +57,18 @@ export default function DataMoon(props) {
 
   return (
     <View style={[sty.container]}>
-      <ScrollView>
-        <View style={[sty.miniContainer1]}>
-          <Text>Phase: {info.moon_phase}</Text>
-          <Text>Illumiantion: {info.moon_illumination}</Text>
+      <ScrollView
+        contentContainerStyle={{
+          flexGrow: 1,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <View style={[sty.infoContainer]}>
+          <Text style={[sty.whiteText]}>Phase: {info.moon_phase}</Text>
+          <Text style={[sty.whiteText]}>
+            Illumiantion: {info.moon_illumination}
+          </Text>
         </View>
         <View style={[sty.containerImage]}>{getIcon()}</View>
         <Footer />

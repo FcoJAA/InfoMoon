@@ -1,8 +1,8 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { useState, useEffect } from "react";
 import { API_KEY, API_HOST } from "@env";
-import DataMoon from "../Components/DataMoon";
+import TodayMoon from "../Components/TodayMoon";
 import { sty } from "../Css/StylesHomeScreen";
 
 export default function HomeScreen() {
@@ -37,7 +37,7 @@ export default function HomeScreen() {
 
   return (
     <View style={[sty.mainContainer]}>
-      <DataMoon moon_info={info} />
+      <TodayMoon moon_info={info} />
     </View>
   );
 }

@@ -6,9 +6,7 @@ const sty = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
-  },
-  titleConatiner: {
-    height: "0%",
+    backgroundColor: "#CFB8F5",
   },
 });
 

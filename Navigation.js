@@ -2,7 +2,6 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
-
 //Screen
 import HomeScreen from "./Screens/HomeScreen";
 import SecondPage from "./Screens/SecondPage";
@@ -14,7 +13,14 @@ function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
-      screenOptions={{ tabBarActiveTintColor: "black" }}
+      screenOptions={{
+        tabBarActiveTintColor: "black",
+        tabBarStyle: {
+          paddingBottom: 5,
+          backgroundColor: "#FFDC64",
+          borderBlockColor: "black",
+        },
+      }}
     >
       <Tab.Screen
         name="Home"
