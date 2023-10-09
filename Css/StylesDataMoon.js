@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 const sty = StyleSheet.create({
   container: {
     backgroundColor: "#B6D4DC",
-    borderColor: "grey",
     borderWidth: 1,
     borderRadius: 10,
     width: "101%",
@@ -11,8 +10,9 @@ const sty = StyleSheet.create({
   },
   image: {
     backgroundColor: "#B6D4DC",
-    width: "60%",
+    width: "65%",
     height: "75%",
+    objectFit: "contain",
   },
   miniContainer1: {
     backgroundColor: "#448A9D",
@@ -20,12 +20,11 @@ const sty = StyleSheet.create({
     alignItems: "center",
     height: 200,
   },
-  miniContainer2: {
-    backgroundColor: "#5E449D",
+  containerImage: {
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height: 300,
+    height: 250,
   },
 });
 

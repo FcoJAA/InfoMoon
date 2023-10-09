@@ -10,7 +10,7 @@ export default function HomeScreen() {
   const { city, setCity } = "Granada";
   const urlCurrent = `https://weatherapi-com.p.rapidapi.com/current.json?q=Granada`;
   const urlAstro =
-    "https://weatherapi-com.p.rapidapi.com/astronomy.json?q=Granada&dt=today";
+    "https://weatherapi-com.p.rapidapi.com/astronomy.json?q=Granada&dt=today"; //YYYY-MM-DD
 
   const options = {
     method: "GET",
