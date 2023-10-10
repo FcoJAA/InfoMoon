@@ -10,6 +10,9 @@ const sty = StyleSheet.create({
     marginBottom: 10,
     fontSize: 11,
   },
+  link: {
+    flexDirection: "row",
+  },
 });
 
 export { sty };
