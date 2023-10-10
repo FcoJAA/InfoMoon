@@ -7,9 +7,10 @@ export default function Footer() {
   return (
     <View style={[sty.container]}>
       <Text style={[sty.text]}>
+        This project is currently working with the location of Granada (Spain)
         App created by FcoAA using the weatherapi-com API. App created with
-        React-Native, Expo Cli in javascript programming language Free
-        distribution and free of copyright.
+        React-Native, Expo Cli in javascript programming language.Free of
+        copyright.
       </Text>
       <Text style={[sty.text]}>01/10/2023</Text>
       <View style={[sty.link]}>

@@ -64,16 +64,30 @@ export default function DataMoon(props) {
           alignItems: "center",
         }}
       >
-        <View style={[sty.infoContainer]}>
-          <Text style={[sty.whiteText]}>Phase: {info.moon_phase}</Text>
-          <Text style={[sty.whiteText]}>
-            Illumiantion: {info.moon_illumination}
+        <View style={[sty.titleContainer]}>
+          <Text style={[sty.title1]}>Welcome!!!</Text>
+          <Text style={[sty.title2]}>
+            Here you can consult the data on the moon today.
           </Text>
-          <Text style={[sty.whiteText]}>Moonrise: {info.moonrise}</Text>
-          <Text style={[sty.whiteText]}>Moonset: {info.moonset}</Text>
+        </View>
+        <View style={[sty.astroInfoContainer]}>
+          <View style={[sty.infoMoonContainer]}>
+            <Text style={[sty.whiteText]}>Phase: {info.moon_phase}</Text>
+            <Text style={[sty.whiteText]}>
+              Illumiantion: {info.moon_illumination}
+            </Text>
+            <Text style={[sty.whiteText]}>Moonrise: {info.moonrise}</Text>
+            <Text style={[sty.whiteText]}>Moonset: {info.moonset}</Text>
+          </View>
+          <View style={[sty.imageMoonContainer]}>
+            <Image
+              style={[sty.image2]}
+              source={require("../assets/telescope.png")}
+            />
+          </View>
         </View>
         <View style={[sty.containerImage]}>{getIcon()}</View>
-        <View style={[sty.sunContainer]}>
+        <View style={[sty.astroInfoContainer]}>
           <View style={[sty.infoSunContainer]}>
             <Text style={[sty.whiteText]}>Sunrise: {info.sunrise}</Text>
             <Text style={[sty.whiteText]}>Sunset: {info.sunset}</Text>

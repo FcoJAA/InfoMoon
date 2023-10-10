@@ -9,6 +9,19 @@ const sty = StyleSheet.create({
     marginTop: "6%",
     height: "95%",
   },
+  titleContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title1: {
+    fontSize: 40,
+    marginTop: 10,
+  },
+  title2: {
+    fontSize: 25,
+    marginBottom: 10,
+    marginTop: 10,
+  },
   image: {
     width: "65%",
     height: "75%",
@@ -32,24 +45,34 @@ const sty = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "95%",
-    height: 250,
+    height: 210,
     borderWidth: 1,
     borderRadius: 10,
     marginTop: 10,
     backgroundColor: "#221345",
   },
-  sunContainer: {
+  astroInfoContainer: {
     flex: 1,
     flexDirection: "row",
     marginTop: 10,
     backgroundColor: "#221345",
-    height: 200,
+    height: 190,
     width: "95%",
     borderWidth: 1,
     borderRadius: 10,
   },
   whiteText: {
     color: "white",
+    marginLeft: 20,
+  },
+  imageMoonContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "45%",
+  },
+  infoMoonContainer: {
+    justifyContent: "center",
+    width: "55%",
   },
   imageSunContainer: {
     justifyContent: "center",
