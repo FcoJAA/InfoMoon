@@ -14,7 +14,12 @@ const sty = StyleSheet.create({
     height: "75%",
     objectFit: "contain",
   },
+  image2: {
+    height: "50%",
+    objectFit: "contain",
+  },
   infoContainer: {
+    marginTop: 10,
     backgroundColor: "#221345",
     justifyContent: "center",
     alignItems: "center",
@@ -33,8 +38,28 @@ const sty = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "#221345",
   },
+  sunContainer: {
+    flex: 1,
+    flexDirection: "row",
+    marginTop: 10,
+    backgroundColor: "#221345",
+    height: 200,
+    width: "95%",
+    borderWidth: 1,
+    borderRadius: 10,
+  },
   whiteText: {
     color: "white",
+  },
+  imageSunContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "50%",
+  },
+  infoSunContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "50%",
   },
 });
 

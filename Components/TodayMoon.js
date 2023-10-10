@@ -71,10 +71,24 @@ export default function DataMoon(props) {
           </Text>
           <Text style={[sty.whiteText]}>Moonrise: {info.moonrise}</Text>
           <Text style={[sty.whiteText]}>Moonset: {info.moonset}</Text>
-          <Text style={[sty.whiteText]}>Sunrise: {info.sunrise}</Text>
-          <Text style={[sty.whiteText]}>Sunset: {info.sunset}</Text>
         </View>
         <View style={[sty.containerImage]}>{getIcon()}</View>
+        <View style={[sty.sunContainer]}>
+          <View style={[sty.infoSunContainer]}>
+            <Text style={[sty.whiteText]}>Sunrise: {info.sunrise}</Text>
+            <Text style={[sty.whiteText]}>Sunset: {info.sunset}</Text>
+          </View>
+          <View style={[sty.imageSunContainer]}>
+            <Image
+              style={[sty.image2]}
+              source={require("../assets/sunrise.png")}
+            />
+            <Image
+              style={[sty.image2]}
+              source={require("../assets/sunset.png")}
+            />
+          </View>
+        </View>
         <Footer />
       </ScrollView>
     </View>
