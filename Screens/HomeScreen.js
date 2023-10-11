@@ -8,7 +8,7 @@ import { sty } from "../Css/StylesHomeScreen";
 export default function HomeScreen() {
   const [info, setInfo] = useState(Object);
   const { city, setCity } = "Granada";
-  const urlCurrent = `https://weatherapi-com.p.rapidapi.com/current.json?q=Granada`;
+  //const urlCurrent = `https://weatherapi-com.p.rapidapi.com/current.json?q=Granada`;
   const urlAstro =
     "https://weatherapi-com.p.rapidapi.com/astronomy.json?q=Granada&dt=today"; //YYYY-MM-DD
 
