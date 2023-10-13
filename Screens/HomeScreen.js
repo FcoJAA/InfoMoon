@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { API_KEY, API_HOST } from "@env";
 import TodayMoon from "../Components/TodayMoon";
 import { sty } from "../Css/StylesHomeScreen";
+import { StatusBar } from "expo-status-bar";
 
 export default function HomeScreen() {
   const [info, setInfo] = useState(Object);

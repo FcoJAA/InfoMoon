@@ -12,7 +12,7 @@ const sty = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#8058C1",
-    width: "99%",
+    width: "98%",
     marginTop: "6%",
     height: "95%",
     borderWidth: 1,
@@ -26,7 +26,7 @@ const sty = StyleSheet.create({
     mainColor: "#F4722B",
     textSecondaryColor: "#D6C7A1",
     borderRadius: 10,
-    width: "90%",
+    width: "95%",
   },
   title1: {
     fontSize: 40,

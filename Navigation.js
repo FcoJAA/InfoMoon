@@ -6,6 +6,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 import HomeScreen from "./Screens/HomeScreen";
 import SecondPage from "./Screens/SecondPage";
 import StackScreen from "./Screens/StackScreen";
+import { StatusBar } from "expo-status-bar";
 
 const Tab = createBottomTabNavigator();
 
@@ -49,6 +50,7 @@ function MyTabs() {
 export default function Navigation() {
   return (
     <NavigationContainer>
+      <StatusBar backgroundColor="#FFDC64" />
       <MyTabs />
     </NavigationContainer>
   );
