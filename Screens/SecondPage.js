@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import DatePicker from "react-native-modern-datepicker";
 import { sty } from "../Css/StyleSecondPage";
-import InfoCalendar from "../Components/InfoCalendar";
+import SunInfoCalendar from "../Components/SunInfoCalendar";
 import Footer from "../Components/Footer";
 import { API_KEY, API_HOST } from "@env";
 
@@ -31,9 +31,6 @@ export default function SecondPage() {
       setInfo(object.astronomy.astro);
     } catch (error) {}
   }
-  function mensaje() {
-    console.log("mensaje" + info.sunset);
-  }
 
   return (
     <View style={[sty.mainContainer]}>
@@ -45,10 +42,13 @@ export default function SecondPage() {
             alignItems: "center",
           }}
         >
-          <Text style={[sty.title1]}>Welcome!!!</Text>
-          <Text style={[sty.title2]}>
-            Here you can consult the data on the moon today.
-          </Text>
+          <View>
+            <Text style={[sty.title1]}>Welcome!!!</Text>
+            <Text style={[sty.title2]}>
+              Here you can consult the data on the moon today.
+            </Text>
+          </View>
+
           <DatePicker
             style={[sty.dataPicker]}
             mode="calendar"
@@ -57,10 +57,7 @@ export default function SecondPage() {
           <TouchableOpacity onPress={getCurrentWeather}>
             <Text>Boton Fecha</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={mensaje}>
-            <Text>confirmar</Text>
-          </TouchableOpacity>
-          <InfoCalendar moon_info={info} />
+          <SunInfoCalendar infoAstro={info} />
           <Footer />
         </ScrollView>
       </View>
