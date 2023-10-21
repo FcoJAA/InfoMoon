@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
-import { sty } from "../Css/StylesSunInfoCalendar";
+import { sty } from "../Css/StyleMoonIconCalendar";
 
 export default function InfoCalendar(props) {
   let info = props.infoAstro;
