@@ -7,7 +7,7 @@ const sty = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "#221345",
     height: 190,
-    width: "92%",
+    width: "90%",
     borderWidth: 1,
     borderRadius: 10,
   },
@@ -19,7 +19,12 @@ const sty = StyleSheet.create({
     color: "white",
     marginLeft: 20,
   },
+  yellowText: {
+    color: "yellow",
+    marginLeft: 20,
+  },
   image: {
+    marginLeft: "15%",
     width: "50%",
     objectFit: "contain",
   },

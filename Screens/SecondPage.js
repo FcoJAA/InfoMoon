@@ -44,7 +44,7 @@ export default function SecondPage() {
             alignItems: "center",
           }}
         >
-          <View>
+          <View style={[sty.titleConatiner]}>
             <Text style={[sty.title1]}>Welcome!!!</Text>
             <Text style={[sty.title2]}>
               Here you can consult the data on the moon today.
@@ -56,8 +56,8 @@ export default function SecondPage() {
             mode="calendar"
             onSelectedChange={handleChange}
           />
-          <TouchableOpacity onPress={getCurrentWeather}>
-            <Text>Boton Fecha</Text>
+          <TouchableOpacity style={[sty.button]} onPress={getCurrentWeather}>
+            <Text>Get Info</Text>
           </TouchableOpacity>
           <MoonInfoCalendar infoAstro={info} />
           <MoonIconCalendar infoAstro={info} />

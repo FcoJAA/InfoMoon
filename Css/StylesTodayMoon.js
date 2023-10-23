@@ -44,7 +44,7 @@ const sty = StyleSheet.create({
   containerImage: {
     justifyContent: "center",
     alignItems: "center",
-    width: "95%",
+    width: "90%",
     height: 210,
     borderWidth: 1,
     borderRadius: 10,
@@ -57,12 +57,16 @@ const sty = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "#221345",
     height: 190,
-    width: "95%",
+    width: "90%",
     borderWidth: 1,
     borderRadius: 10,
   },
   whiteText: {
     color: "white",
+    marginLeft: 20,
+  },
+  yellowText: {
+    color: "yellow",
     marginLeft: 20,
   },
   imageMoonContainer: {

@@ -9,7 +9,7 @@ const sty = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height: 190,
-    width: "95%",
+    width: "90%",
     borderWidth: 1,
     borderRadius: 10,
   },
@@ -25,6 +25,10 @@ const sty = StyleSheet.create({
   },
   whiteText: {
     color: "white",
+    marginLeft: 20,
+  },
+  yellowText: {
+    color: "yellow",
     marginLeft: 20,
   },
   imageSun: {

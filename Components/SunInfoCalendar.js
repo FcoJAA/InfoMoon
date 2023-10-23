@@ -8,8 +8,12 @@ export default function InfoCalendar(props) {
   return (
     <View style={[sty.infoContainer]}>
       <View style={[sty.infoSunContainer]}>
-        <Text style={[sty.whiteText]}>Sunrise: {info.sunrise}</Text>
-        <Text style={[sty.whiteText]}>Sunset: {info.sunset}</Text>
+        <Text style={[sty.whiteText]}>
+          Sunrise:<Text style={[sty.yellowText]}> {info.sunrise}</Text>
+        </Text>
+        <Text style={[sty.whiteText]}>
+          Sunset: <Text style={[sty.yellowText]}>{info.sunset}</Text>
+        </Text>
       </View>
       <View style={[sty.imageSunContainer]}>
         <Image
