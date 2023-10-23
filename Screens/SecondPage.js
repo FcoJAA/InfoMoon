@@ -7,6 +7,7 @@ import SunInfoCalendar from "../Components/SunInfoCalendar";
 import Footer from "../Components/Footer";
 import { API_KEY, API_HOST } from "@env";
 import MoonIconCalendar from "../Components/MoonIconCalendar";
+import MoonInfoCalendar from "../Components/MoonInfoCalendar";
 
 export default function SecondPage() {
   const [date, setDate] = useState(false);
@@ -58,6 +59,7 @@ export default function SecondPage() {
           <TouchableOpacity onPress={getCurrentWeather}>
             <Text>Boton Fecha</Text>
           </TouchableOpacity>
+          <MoonInfoCalendar infoAstro={info} />
           <MoonIconCalendar infoAstro={info} />
           <SunInfoCalendar infoAstro={info} />
           <Footer />
