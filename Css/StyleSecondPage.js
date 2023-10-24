@@ -33,12 +33,25 @@ const sty = StyleSheet.create({
     backgroundColor: "#FFDC64",
     borderColor: "black",
     borderWidth: 1,
-    borderRadius: 10,
-    margin: 15,
-    width: "30%",
-    height: 50,
+    borderRadius: 100,
+    marginTop: 10,
+    width: "28%",
+    height: 70,
     alignItems: "center",
     justifyContent: "center",
+    shadowColor: "black",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 19.0,
+
+    elevation: 15,
+  },
+  textButtton: {
+    fontSize: 17,
+    color: "#221345",
   },
 });
 export { sty };

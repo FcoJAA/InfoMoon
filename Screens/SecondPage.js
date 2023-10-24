@@ -9,6 +9,7 @@ import { API_KEY, API_HOST } from "@env";
 import MoonIconCalendar from "../Components/MoonIconCalendar";
 import MoonInfoCalendar from "../Components/MoonInfoCalendar";
 import Header from "../Components/Header";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 export default function SecondPage() {
   const [date, setDate] = useState(false);
@@ -52,9 +53,11 @@ export default function SecondPage() {
             onSelectedChange={handleChange}
           />
           <TouchableOpacity style={[sty.button]} onPress={getCurrentWeather}>
-            <Text>Get Info</Text>
+            <Text style={[sty.textButtton]}>Get Info</Text>
+            <Icon name="cloud-search" size={30} color={"#221345"} />
           </TouchableOpacity>
           <MoonInfoCalendar infoAstro={info} />
+          <Text>Get Info</Text>
           <MoonIconCalendar infoAstro={info} />
           <SunInfoCalendar infoAstro={info} />
           <Footer />

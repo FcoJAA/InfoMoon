@@ -14,7 +14,10 @@ export default function Header(props) {
             fontFamily: "sans-serif-light",
             fontSize: 20,
             marginTop: 10,
-            color: "#FFDC64",
+            color: "#F2B700",
+            textShadowColor: "#0044AA",
+            textShadowOffset: { width: 2, height: 2 },
+            textShadowRadius: 1,
           }}
         >
           Here you can consult the data on the moon today.
@@ -27,7 +30,10 @@ export default function Header(props) {
             fontFamily: "sans-serif-light",
             fontSize: 20,
             marginTop: 10,
-            color: "#FFDC64",
+            color: "#F2B700",
+            textShadowColor: "#0044AA",
+            textShadowOffset: { width: 2, height: 2 },
+            textShadowRadius: 1,
           }}
         >
           Here you can check the lunar forecast for any day.
@@ -43,7 +49,10 @@ export default function Header(props) {
           fontFamily: "monospace",
           fontSize: 40,
           marginTop: 10,
-          color: "#FFDC64",
+          color: "#F2B700",
+          textShadowColor: "#0044AA",
+          textShadowOffset: { width: 2, height: 2 },
+          textShadowRadius: 1,
         }}
       >
         <Icon name="telescope" size={30} color={"#F2B700"} />

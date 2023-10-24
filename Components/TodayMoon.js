@@ -6,7 +6,7 @@ import Header from "./Header";
 
 export default function DataMoon(props) {
   let info = props.moon_info;
-  //Simplificar este componente varibles de imagenes e index
+  //Simplificar este componente variables de imagenes e index
   //Crear componente unico
   function getIcon() {
     if (info.moon_phase == "Waning Crescent") {
