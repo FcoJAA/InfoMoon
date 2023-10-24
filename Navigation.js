@@ -5,7 +5,8 @@ import Icon from "react-native-vector-icons/Ionicons";
 //Screen
 import HomeScreen from "./Screens/HomeScreen";
 import SecondPage from "./Screens/SecondPage";
-import StackScreen from "./Screens/StackScreen";
+import SettingsPage from "./Screens/SettingsPage";
+//import StackScreen from "./Screens/StackScreen";
 import { StatusBar } from "expo-status-bar";
 
 const Tab = createBottomTabNavigator();
@@ -34,12 +35,22 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Second Page"
+        name="Calendar"
         component={SecondPage}
         options={{
           headerShown: false,
           tabBarIcon: ({ tintColor }) => (
             <Icon name="calendar" color={tintColor} size={25} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={SettingsPage}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ tintColor }) => (
+            <Icon name="settings" color={tintColor} size={25} />
           ),
         }}
       />

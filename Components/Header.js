@@ -23,7 +23,7 @@ export default function Header(props) {
           Here you can consult the data on the moon today.
         </Text>
       );
-    } else {
+    } else if (info == "calendar") {
       return (
         <Text
           style={{
@@ -37,6 +37,22 @@ export default function Header(props) {
           }}
         >
           Here you can check the lunar forecast for any day.
+        </Text>
+      );
+    } else if (info == "settings") {
+      return (
+        <Text
+          style={{
+            fontFamily: "sans-serif-light",
+            fontSize: 20,
+            marginTop: 10,
+            color: "#F2B700",
+            textShadowColor: "#0044AA",
+            textShadowOffset: { width: 2, height: 2 },
+            textShadowRadius: 1,
+          }}
+        >
+          Select your localitation.
         </Text>
       );
     }

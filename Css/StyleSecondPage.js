@@ -25,7 +25,9 @@ const sty = StyleSheet.create({
     selectedTextColor: "#fff",
     mainColor: "#F4722B",
     textSecondaryColor: "#D6C7A1",
+    borderWidth: 3,
     borderRadius: 10,
+    borderColor: "#221345",
     width: "95%",
     marginTop: 15,
   },
@@ -46,7 +48,6 @@ const sty = StyleSheet.create({
     },
     shadowOpacity: 0.5,
     shadowRadius: 19.0,
-
     elevation: 15,
   },
   textButtton: {
