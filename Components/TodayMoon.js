@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View, Image, ScrollView } from "react-native";
 import { sty } from "../Css/StylesTodayMoon";
 import Footer from "./Footer";
+import Header from "./Header";
 
 export default function DataMoon(props) {
   let info = props.moon_info;
@@ -64,12 +65,7 @@ export default function DataMoon(props) {
           alignItems: "center",
         }}
       >
-        <View style={[sty.titleContainer]}>
-          <Text style={[sty.title1]}>Welcome!!!</Text>
-          <Text style={[sty.title2]}>
-            Here you can consult the data on the moon today.
-          </Text>
-        </View>
+        <Header date="today" />
         <View style={[sty.astroInfoContainer]}>
           <View style={[sty.infoMoonContainer]}>
             <Text style={[sty.whiteText]}>

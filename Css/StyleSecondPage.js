@@ -27,16 +27,7 @@ const sty = StyleSheet.create({
     textSecondaryColor: "#D6C7A1",
     borderRadius: 10,
     width: "95%",
-  },
-  titleConatiner: { justifyContent: "center", alignItems: "center" },
-  title1: {
-    fontSize: 40,
-    marginTop: 10,
-  },
-  title2: {
-    fontSize: 25,
-    marginBottom: 10,
-    marginTop: 10,
+    marginTop: 15,
   },
   button: {
     backgroundColor: "#FFDC64",

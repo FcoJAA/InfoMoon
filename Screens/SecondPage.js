@@ -8,6 +8,7 @@ import Footer from "../Components/Footer";
 import { API_KEY, API_HOST } from "@env";
 import MoonIconCalendar from "../Components/MoonIconCalendar";
 import MoonInfoCalendar from "../Components/MoonInfoCalendar";
+import Header from "../Components/Header";
 
 export default function SecondPage() {
   const [date, setDate] = useState(false);
@@ -44,13 +45,7 @@ export default function SecondPage() {
             alignItems: "center",
           }}
         >
-          <View style={[sty.titleConatiner]}>
-            <Text style={[sty.title1]}>Welcome!!!</Text>
-            <Text style={[sty.title2]}>
-              Here you can consult the data on the moon today.
-            </Text>
-          </View>
-
+          <Header date="calendar" />
           <DatePicker
             style={[sty.dataPicker]}
             mode="calendar"

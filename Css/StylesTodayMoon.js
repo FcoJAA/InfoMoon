@@ -9,19 +9,6 @@ const sty = StyleSheet.create({
     marginTop: "6%",
     height: "95%",
   },
-  titleContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  title1: {
-    fontSize: 40,
-    marginTop: 10,
-  },
-  title2: {
-    fontSize: 25,
-    marginBottom: 10,
-    marginTop: 10,
-  },
   image: {
     width: "65%",
     height: "75%",
