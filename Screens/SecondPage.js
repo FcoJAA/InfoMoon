@@ -57,7 +57,6 @@ export default function SecondPage() {
             <Icon name="cloud-search" size={30} color={"#221345"} />
           </TouchableOpacity>
           <MoonInfoCalendar infoAstro={info} />
-          <Text>Get Info</Text>
           <MoonIconCalendar infoAstro={info} />
           <SunInfoCalendar infoAstro={info} />
           <Footer />
