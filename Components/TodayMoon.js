@@ -1,14 +1,19 @@
 import React from "react";
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, Text } from "react-native";
 import { sty } from "../Css/StylesTodayMoon";
 import SunInfoCalendar from "./SunInfoCalendar";
 import MoonIconCalendar from "./MoonIconCalendar";
 import MoonInfoCalendar from "./MoonInfoCalendar";
 import Footer from "./Footer";
 import Header from "./Header";
+import { useContext } from "react";
+import { AppContext } from "./Provider";
 
 export default function DataMoon(props) {
   let info = props.moon_info;
+  const [state, setState] = useContext(AppContext); //Provider
+
+  //console.log();
 
   return (
     <View style={[sty.container]}>
