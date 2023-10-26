@@ -30,29 +30,7 @@ const sty = StyleSheet.create({
     borderColor: "#221345",
     width: "95%",
     marginTop: 15,
-  },
-  button: {
-    backgroundColor: "#FFDC64",
-    borderColor: "black",
-    borderWidth: 1,
-    borderRadius: 100,
-    marginTop: 10,
-    width: "28%",
-    height: 70,
-    alignItems: "center",
-    justifyContent: "center",
-    shadowColor: "black",
-    shadowOffset: {
-      width: 0,
-      height: 12,
-    },
-    shadowOpacity: 0.5,
-    shadowRadius: 19.0,
-    elevation: 15,
-  },
-  textButtton: {
-    fontSize: 17,
-    color: "#221345",
+    marginBottom: 5,
   },
 });
 export { sty };

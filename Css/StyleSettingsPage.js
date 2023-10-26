@@ -27,6 +27,10 @@ const sty = StyleSheet.create({
     borderRadius: 10,
     borderColor: "#221345",
   },
+  mapImage: {
+    width: "60%",
+    height: "40%",
+  },
 });
 
 export { sty };

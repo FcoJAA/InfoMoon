@@ -1,5 +1,4 @@
 import { createContext, useState, useContext } from "react";
-//https://pablomonteserin.com/curso/react/context-api/
 export const AppContext = createContext();
 export const useMyContext = () => useContext(AppContext);
 

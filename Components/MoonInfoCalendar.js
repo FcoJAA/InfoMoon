@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, Text, Image } from "react-native";
 import { sty } from "../Css/StyleMoonInfoCalendar";
 
 export default function MoonInfoCalendar(props) {
   info = props.infoAstro;
+  location = props.locationProvider;
+  date = props.day;
 
   return (
     <View style={[sty.infoContainer]}>
       <View style={[sty.infoMoonContainer]}>
+        <Text style={[sty.whiteText]}>
+          Location:{" "}
+          <Text style={[sty.yellowText]}>{location ? location : " --"}</Text>
+        </Text>
+        <Text style={[sty.whiteText]}>
+          Date: <Text style={[sty.yellowText]}>{date ? date : "Today"}</Text>
+        </Text>
         <Text style={[sty.whiteText]}>
           Phase:{" "}
           <Text style={[sty.yellowText]}>
